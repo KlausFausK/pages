@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesezeichen</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+            color: #333;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .details-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 20px 0;
+        }
+        details {
+            background: white;
+            margin: 0;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        summary {
+            font-weight: bold;
+            cursor: pointer;
+            padding: 5px;
+            color: #2c3e50;
+            font-size: 1.1em;
+        }
+        summary:hover {
+            color: #3498db;
+        }
+        .section {
+            margin: 15px 0;
+        }
+        .columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .subsection {
+            margin: 10px 0 10px 20px;
+        }
+        .subsection h3 {
+            color: #555;
+            font-size: 1em;
+            margin: 10px 0 5px 0;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 3px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 5px 0 5px 10px;
+        }
+        li {
+            margin: 5px 0;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: #2980b9;
+        }
+        @media (max-width: 768px) {
+            .columns {
+                grid-template-columns: 1fr;
+            }
+            .details-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<h1>🔖 Lesezeichen</h1>
+
+<div class="details-container">
+
+<!-- News Sektion -->
+<details>
+    <summary>📣 News</summary>
+    <div class="section">
+        <div class="subsection">
+        <h3>DE</h3>
+            <ul>
+                <li><a href="https://www.inoreader.com/all_articles">Inoreader</a></li>
+                <li><a href="https://www.tagesschau.de/">tagesschau</a></li>
+                <li><a href="https://www.wdr.de/">WDR</a></li>
+                <li><a href="https://www.taz.de/">taz</a></li>
+                <li><a href="https://netzpolitik.org/">Netzpolitik</a></li>
+                <li><a href="https://koeln.polizei.nrw">Polizei Meldungen</a></li>
+            </ul>
+        </div>
+        <div class="subsection">
+        <h3>Welt</h3>
+            <ul>
+                <li><a href="https://www.nytimes.com/">NY Times</a></li>
+                <li><a href="https://edition.cnn.com/">CNN</a></li>
+                <li><a href="https://www.theguardian.com/europe">Guardian</a></li>
+                <li><a href="https://www.reuters.com/">Reuters</a></li>
+                <li><a href="https://apnews.com/">AP</a></li>
+            </ul>
+        </div>
+    </div>
+</details>
+
+<!-- Wetter Sektion -->
+<details>
+    <summary>⛅ Wetter</summary>
+    <div class="section">
+        <div class="subsection">
+        <h3>Aktuell</h3>
+            <ul>
+                <li><a href="https://koeln-wetter.app/">KölnWetter</a></li>
+                <li><a href="https://atmos.meteo.uni-koeln.de/~citystation/webDashboard/">Uni</a></li>
+                <li><a href="https://kachelmannwetter.com/de/wetter/2949291-bickendorf">Bickendorf</a></li>
+                <li><a href="https://kachelmannwetter.com/de/vorhersage/2949291-bickendorf/xltrend/euro">Modelle</a></li>
+                <li><a href="https://www.wetterdienst.de/Deutschlandwetter/Bickendorf_Koeln/">Bickendorf</a></li>
+                <li><a href="https://radar.wetterdienst.de">Radar</a></li>
+                <li><a href="https://www.wetterdienst.de/Maps/Deutschland/">... besseres Radar</a></li>
+            </ul>
+        </div>
+
+        <div class="subsection">
+        <h3>Misc</h3>
+            <ul>
+                <li><a href="https://www.lightningmaps.org/?lang=de#m=oss;t=3;s=0;o=0;b=;ts=0;">Blitze Echtzeit</a></li>
+                <li><a href="https://www.dwd.de/DE/leistungen/gefahrenindizespollen/gefahrenindexpollen.html?nn=18448">DWD Pollen</a></li>
+                <li><a href="https://www.naturgefahrenportal.de/de/alerts">DWD Naturgefahren</a></li>
+                <li><a href="https://de.weatherspark.com/y/54495/Durchschnittswetter-in-K%C3%B6ln-Nordrhein-Westfalen-Deutschland-das-ganze-Jahr-%C3%BCber">Historische Daten</a></li>
+                <li><a href="https://www.timeanddate.de/sonne/deutschland/koeln">🌞 Tageslänge 🌙</a></li>
+            </ul>
+        </div>
+    </div>
+</details>
+
+<!-- AI Sektion -->
+<details>
+    <summary>🤖 AI</summary>
+    <div class="section">
+        <h3>💬 Chatbots</h3>
+        <ul>
+            <li><a href="https://chatgpt.com">ChatGPT</a></li>
+            <li><a href="https://chat.mistral.ai/chat">Mistral</a></li>
+            <li><a href="https://www.perplexity.ai">Perplexity</a></li>
+            <li><a href="https://claude.ai">Anthropic</a></li>
+        </ul>
+    </div>
+</details>
+
+<!-- Domains Sektion -->
+<details>
+    <summary>🕸 Domains</summary>
+    <div class="section">
+        <div class="subsection">
+            <h3>Variomedia</h3>
+            <ul>
+                <li><a href="https://webmail.variomedia.de/">Webmail 📫</a></li>
+                <li><a href="https://www.variomedia.de/">Variomedia</a></li>
+                <li><a href="https://my.variomedia.de/">My Variomedia</a></li>
+                <li><a href="https://vertrag.variomedia.de/login?referer=start">Vertrag</a></li>
+            </ul>
+        </div>
+        <div class="subsection">
+            <h3>mailbox.org</h3>
+            <ul>
+                <li><a href="https://app.mailbox.org/appsuite/#!!&app=io.ox/portal">Portal</a></li>
+            </ul>
+        </div>
+    </div>
+</details>
+
+<!-- EDV Sektion -->
+<details>
+    <summary>💻 EDV</summary>
+    <div class="section">
+        <div class="columns">
+            <div>
+                <div class="subsection">
+                    <h3>📱 Apps</h3>
+                    <ul>
+                        <li><a href="https://reports.exodus-privacy.eu.org/de/">εxodus</a></li>
+                        <li><a href="https://f-droid.org/">F-Droid</a></li>
+                        <li><a href="https://f-droid.org/de/packages/com.aurora.store/">Aurora Store</a></li>
+                        <li><a href="https://github.com/nucleus-ffm/foss_warn">FOSS Warn</a></li>
+                    </ul>
+                </div>
+                <div class="subsection">
+                    <h3>🤔 Blogs</h3>
+                    <ul>
+                        <li><a href="https://blog.fefe.de/">Fefe</a></li>
+                        <li><a href="https://stadt-bremerhaven.de/">Caschy</a></li>
+                        <li><a href="https://www.kuketz-blog.de/">Kuketz</a></li>
+                    </ul>
+                </div>
+                <div class="subsection">
+                    <h3>RPi</h3>
+                    <ul>
+                        <li><a href="https://raspberrytips.com/">Raspberry Tips</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div class="subsection">
+                    <h3>DNS et al</h3>
+                    <ul>
+                        <li><a href="https://rethinkdns.com">RethinkDNS</a></li>
+                        <li><a href="https://dnsforge.de/">dnsforge.de</a></li>
+                        <li><a href="https://digitalcourage.de/">Digitalcourage</a></li>
+                        <li><a href="https://european-alternatives.eu/alternatives-to">EU-Alternativen</a></li>
+                    </ul>
+                </div>
+                <div class="subsection">
+                    <h3>📰 Magazine</h3>
+                    <ul>
+                        <li><a href="https://www.linux-magazin.de/">Linux Magazin</a></li>
+                        <li><a href="https://linuxnews.de/">Linux News</a></li>
+                        <li><a href="https://www.ransomware.live/">Ransomware.live</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</details>
+
+<!-- Einkaufen Sektion -->
+<details>
+    <summary>🛒 Einkaufen</summary>
+    <div class="section">
+        <div class="columns">
+            <div>
+                <div class="subsection">
+                    <h3>Läden</h3>
+                    <ul>
+                        <li><a href="https://www.amazon.de">Amazon</a></li>
+                        <li><a href="https://www.apollo.de">Apollo</a></li>
+                        <li><a href="https://singlekey-id.com/de-de/home">BSH Login</a></li>
+                        <li><a href="https://www.mediamarkt.de">MediaMarkt</a></li>
+                        <li><a href="https://www.otto.de">Otto</a></li>
+                        <li><a href="https://www.rasppishop.de/">Raspi Shop</a></li>
+                        <li><a href="https://www.berrybase.de/">BerryBase</a></li>
+                        <li><a href="https://nkon.nl">nkon</a></li>
+                        <li><a href="https://www.soundcore.com/de">Soundcore</a></li>
+                    </ul>
+                </div>
+                <div class="subsection">
+                    <h3>Versand</h3>
+                    <ul>
+                        <li><a href="https://www.dhl.de/de/privatkunden/dhl-sendungsverfolgung.html">DHL</a></li>
+                        <li><a href="https://www.amazon.de/gp/css/order-history?ref_=navm_accountmenu_orders_track_manage">Amazon Bestellungen</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div class="subsection">
+                    <h3>Ratgeber</h3>
+                    <ul>
+                        <li><a href="https://www.tabletblog.de/">Tablet-Blog</a></li>
+                        <li><a href="https://www.gsmarena.com/search.php3?">GSM Arena</a></li>
+                        <li><a href="https://www.verbraucherzentrale.de/fakeshopfinder-71560">FakeShop Finder</a></li>
+                        <li><a href="https://geizhals.de/">Geizhals</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</details>
+
+<!-- Finanzen Sektion -->
+<details>
+    <summary>💰 Finanzen</summary>
+    <div class="section">
+        <div class="columns">
+            <div>
+                <ul>
+                    <li><a href="https://www.handelsblatt.com/brutto-netto-rechner/">Brutto-Netto</a></li>
+                    <li><a href="https://www.finanzrechner.org/sonstige-rechner/rentenbesteuerungsrechner/">Rentenrechner</a></li>
+                    <li><a href="https://www.ing.de/">ING</a></li>
+                    <li><a href="https://wero-wallet.eu/de">Wero</a></li>
+                    <li><a href="https://www.paypal.com/de/home">Paypal</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="https://www.steuer-web.de/start/">WiSo</a></li>
+                    <li><a href="https://www.arbeitsagentur.de/">Arbeitsagentur</a></li>
+                    <li><a href="https://www.wohngeldrechner.nrw.de/wg/wgrbhtml/WGRBWLKM?BULA=NW">Wohngeld NRW</a></li>
+                    <li><a href="https://mein.verdi.de">Ver.di</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</details>
+
+<!-- Gesundheit Sektion -->
+<details>
+    <summary>🏥 Gesundheit</summary>
+    <div class="section">
+        <ul>
+            <li><a href="https://www.dak.de">DAK</a></li>
+            <li><a href="https://www.doctolib.de">Doctolib</a></li>
+            <li><a href="https://www.haut.de/inhaltsstoffe-inci/">haut.de</a></li>
+        </ul>
+    </div>
+</details>
+
+<!-- Media Sektion -->
+<details>
+    <summary>🎵 Media</summary>
+    <div class="section">
+        <div class="columns">
+            <div>
+                <div class="subsection">
+                    <h3>📻 Audio</h3>
+                    <ul>
+                        <li><a href="https://www.ardaudiothek.de/">ARD</a></li>
+                        <li><a href="https://www.audible.de/">Audible</a></li>
+                        <li><a href="https://www.bookbeat.com/de/">Bookbeat</a></li>
+                        <li><a href="https://open.spotify.com/intl-de/">Spotify</a></li>
+                        <li><a href="https://contendomedia.de/">Contendo Media</a></li>
+                        <li><a href="https://www.europa-next.de/">Europa Next</a></li>
+                        <li><a href="https://www.the-aos.com/">The AOS</a></li>
+                        <li><a href="https://www.maritim-hoerspiele.de/">Maritim</a></li>
+                        <li><a href="https://www.hoerspiele.de/">Hörspiele.de</a></li>
+                        <li><a href="https://zeit---geist.de/thema/hoerbuecher/">ZeitGeist Reviews</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div class="subsection">
+                    <h3>📺 Video</h3>
+                    <ul>
+                        <li><a href="https://www.ardmediathek.de/">ARD</a></li>
+                        <li><a href="https://www.3sat.de/">3sat</a></li>
+                        <li><a href="https://www.arte.tv/de">arte</a></li>
+                        <li><a href="https://www.zdf.de/">ZDF</a></li>
+                        <li><a href="https://plus.nasa.gov/">NASA+</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</details>
+
+<!-- Navi Sektion -->
+<details>
+    <summary>🧭 Navi</summary>
+    <div class="section">
+        <div class="columns">
+            <div>
+                <div class="subsection">
+                    <h3>🚂 ÖPNV</h3>
+                    <ul>
+                        <li><a href="https://www.kvb.koeln/">KVB</a></li>
+                        <li><a href="https://www.vrs.de/">VRS</a></li>
+                        <li><a href="https://www.zuginfo.nrw/">Zuginfo NRW</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div class="subsection">
+                    <h3>🌍 Karten</h3>
+                    <ul>
+                        <li><a href="https://www.openstreetmap.org/#map=6/51.33/10.45">OSM</a></li>
+                        <li><a href="https://organicmaps.app/de/">Organic Maps (App-Seite)</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</details>
+
+<!-- Reise Sektion -->
+<details>
+    <summary>🌴 Reise</summary>
+    <div class="section">
+        <ul>
+            <li><a href="https://www.ndr.de/ratgeber/reise/ausflugstipps148.html">Ausflüge in den Norden</a></li>
+            <li><a href="https://www.kurz-mal-weg.de/reisemagazin/freizeitaktivitaeten/die-besten-wanderwege-cochem">Wandern in Cochem</a></li>
+            <li><a href="https://taz.de/Tourismus-an-der-Nordseekueste/!6078325/">Tourismus Nordsee</a></li>
+        </ul>
+    </div>
+</details>
+
+<!-- Sport Sektion -->
+<details>
+    <summary>🏆 Sport</summary>
+    <div class="section">
+        <div class="columns">
+            <div>
+                <div class="subsection">
+                    <h3>⚾ Baseball</h3>
+                    <ul>
+                        <li><a href="https://www.mlb.com/">Baseball</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div class="subsection">
+                    <h3>🚲 Cycle</h3>
+                    <ul>
+                        <li><a href="https://www.letour.fr/de/">Tour de France</a></li>
+                        <li><a href="https://www.procyclingstats.com/">Pro Cycling Stats</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</details>
+
+<!-- Universität Sektion -->
+<details>
+    <summary>🏛️ Universität</summary>
+    <div class="section">
+        <ul>
+            <li><a href="https://sogo.uni-koeln.de/SOGo/so/">Webmail Uni 📫</a></li>
+            <li><a href="https://kim.uni-koeln.de/">uniKIM</a></li>
+            <li><a href="https://klips2.uni-koeln.de/co/webnav.ini">Klips</a></li>
+            <li><a href="https://www.hf.uni-koeln.de/30012Abend">Personal HumF</a></li>
+        </ul>
+    </div>
+</details>
+
+<!-- Wissenschaft Sektion -->
+<details>
+    <summary>🔬 Wissenschaft</summary>
+    <div class="section">
+        <div class="columns">
+            <div>
+                <div class="subsection">
+                    <h3>🌋 Erdbeben</h3>
+                    <ul>
+                        <li><a href="https://www.seismo.uni-koeln.de/seismogramme/index.htm">Bensberg</a></li>
+                        <li><a href="https://earthquake.usgs.gov/earthquakes/map/?extent=31.2034,-21.35742&extent=58.21702,43.50586">USGS</a></li>
+                        <li><a href="https://geofon.gfz.de/eqinfo/">GFZ</a></li>
+                    </ul>
+                </div>
+                <div class="subsection">
+                    <h3>🌊 Wasser</h3>
+                    <ul>
+                        <li><a href="https://www.pegelonline.wsv.de/gast/stammdaten?pegelnr=2730010">Pegel</a></li>
+                        <li><a href="https://www.elwis.de/DE/dynamisch/Wasserstaende/Pegelvorhersage:K%C3%96LN">ELWIS</a></li>
+                        <li><a href="https://steb-koeln.de/hochwasser-und-ueberflutungsschutz/wasserstandsvorhersage/wasserstandsvorhersage.jsp">StEB</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div class="subsection">
+                    <h3>🌧 Klima</h3>
+                    <ul>
+                        <li><a href="https://gml.noaa.gov/ccgg/trends/">CO2 Hawaii</a></li>
+                    </ul>
+                </div>
+                <div class="subsection">
+                    <h3>⭐ Astro</h3>
+                    <ul>
+                        <li><a href="https://cneos.jpl.nasa.gov/sentry/">NEO Sentry</a></li>
+                    </ul>
+                </div>
+                <div class="subsection">
+                    <h3>Geschichte</h3>
+                    <ul>
+                        <li><a href="https://www.israelnetz.com/ist-jordanien-palaestina/">Jordanien Palästina</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</details>
+
+<!-- Wohnung Sektion -->
+<details>
+    <summary>🏡 Wohnung</summary>
+    <div class="section">
+        <ul>
+            <li><a href="https://online.brunata-huerth.de/legacy/login?returnUrl=/dashboard">Brunata 🔥</a></li>
+            <li><a href="https://www.gag-koeln.de/">GAG 🏠</a></li>
+            <li><a href="https://www.rheinenergie.com/de/">Rheinenergie 🔌</a></li>
+        </ul>
+    </div>
+</details>
+
+<!-- X-Finder Sektion -->
+<details>
+    <summary>⚓ X-Finder</summary>
+    <div class="section">
+        <ul>
+            <li><a href="https://www.vesselfinder.com/de">Schiffe ⛵</a></li>
+            <li><a href="https://planefinder.net/">Flugzeuge ✈</a></li>
+            <li><a href="https://stellarium-web.org/">Sterne 🪐</a></li>
+        </ul>
+    </div>
+</details>
+
+<!-- Zeit Sektion -->
+<details>
+    <summary>⏰ Zeit</summary>
+    <div class="section">
+        <ul>
+            <li><a href="https://www.timeanddate.de/sonne/deutschland/koeln">🌞 time and date - Sonne</a></li>
+            <li><a href="https://www.timeanddate.de/datum/zeitspanne-sekunde">time and date - Zeitspanne</a></li>
+            <li><a href="https://www.timeanddate.de/uhrzeit/persoenliche-weltzeituhr?cities=3399,311,274">time and date - AoE &lt;-&gt; LINT</a></li>
+        </ul>
+    </div>
+</details>
+
+<details>
+    <summary>🚨 Notfall</summary>
+    <div class="section">
+        <ul>
+            <li><a href="https://www.sperr-notruf.de/">Sperr-Notruf 116 116</a></li>
+            <li><a href="https://www.kuno-sperrdienst.de/">KUNO</a></li>
+            <li><a href="https://www.ing.de/wissen/karte-sperren/">ING</a></li>
+            <li><a href="https://www.bbk.bund.de/DE/Home/home_node.html">BBK</a></li>
+            <li><a href="https://warnung.bund.de/meldungen">BBK Warnungen (NINA)</a></li>
+            <li><a href="https://www1.wdr.de/nachrichten/krank-an-weihnachten-wo-es-hilfe-gibt-100.html">Medizinischer Notfall</a></li>
+
+            <li>☎ **0800 36 38 469** - Amazon (zB. Account Diebstahl)</li>
+            <li>IMEI: **3528 4293 2654 998 / 08**</li>
+
+            <li><a href="https://www.stadt-koeln.de/service/produkte/00368/index.html">Melderegister</a></li>
+            <li><a href="https://www.kuketz-blog.de/empfehlungsecke/#identit%C3%A4tsdiebstahl">Kuketz - Ernstfall</a></li>
+            <li><a href="https://www.online-strafanzeige.de/">Strafanzeige online</a></li>
+        </ul>
+    </div>
+</details>
+
+</div>
+
+</body>
+</html>
