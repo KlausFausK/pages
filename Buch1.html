@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raumbuchungen: Heute & Morgen</title>
+    <title>Raumbuchungsübersicht</title>
     <style>
         * {
             margin: 0;
@@ -33,28 +33,13 @@
             align-items: center;
             margin-bottom: 20px;
             padding-bottom: 12px;
-            border-bottom: 2px solid #00A9CE;
+            border-bottom: 2px solid #006b80;
         }
         
         h1 {
-            color: #006580;
+            color: #004452;
             font-size: 1.5em;
             margin: 0;
-        }
-        
-        .page-link {
-            background: #00A9CE;
-            color: white;
-            padding: 8px 16px;
-            border-radius: 4px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 0.9em;
-            transition: background 0.2s;
-        }
-        
-        .page-link:hover {
-            background: #006580;
         }
         
         .date-section {
@@ -62,7 +47,7 @@
         }
         
         .date-header {
-            background: #006580;
+            background: #006b80;
             color: white;
             padding: 10px 15px;
             font-size: 1.1em;
@@ -76,7 +61,7 @@
         }
         
         .date-header:hover {
-            background: #008fb5;
+            background: #005566;
         }
         
         .collapse-icon {
@@ -102,12 +87,12 @@
         }
         
         .building-header {
-            background: #e6f7fb;
+            background: #cce6ed;
             padding: 6px 12px;
             font-weight: 600;
             font-size: 0.95em;
-            color: #006580;
-            border-left: 3px solid #00A9CE;
+            color: #004452;
+            border-left: 3px solid #006b80;
             cursor: pointer;
             user-select: none;
             display: flex;
@@ -117,7 +102,7 @@
         }
         
         .building-header:hover {
-            background: #d0f0f8;
+            background: #b3dce6;
         }
         
         .building-content {
@@ -150,24 +135,24 @@
         }
         
         .room-card:hover {
-            box-shadow: 0 2px 8px rgba(0, 169, 206, 0.25);
+            box-shadow: 0 2px 8px rgba(0, 107, 128, 0.35);
         }
         
         .room-name {
             font-weight: 600;
-            color: #006580;
+            color: #004452;
             margin-bottom: 6px;
             font-size: 0.95em;
         }
         
         .room-name a {
-            color: #006580;
+            color: #004452;
             text-decoration: none;
         }
         
         .room-name a:hover {
             text-decoration: underline;
-            color: #00A9CE;
+            color: #006b80;
         }
         
         .room-name.decentral::after {
@@ -240,8 +225,7 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>Raumbuchungen: Heute & Morgen</h1>
-            <a href="Buch2.html" class="page-link">→ Samstage</a>
+            <h1>Raumbuchungsübersicht</h1>
         </div>
 
         <div class="date-section">
@@ -610,14 +594,200 @@
             </div>
         </div>
 
+        <div class="date-section">
+            <div class="date-header collapsed" onclick="toggleCollapse(this)">
+                <span>Samstag, 21. 02. 2026</span>
+                <span class="collapse-icon">▼</span>
+            </div>
+            <div class="date-content collapsed">
+
+                <div class="building-group">
+                    <div class="building-header collapsed" onclick="toggleCollapse(this)">
+                        <span>79b (221)</span>
+                        <span class="collapse-icon">▼</span>
+                    </div>
+                    <div class="building-content collapsed">
+                        <div class="rooms-grid">
+                            <div class="room-card ">
+                                <div class="room-name"><a href="https://klips2.uni-koeln.de/co/wbKalender.wbRessource?pResNr=108&pDisplayMode=w&pDatum=" target="_blank">S171</a></div>
+                                <div class="empty">—</div>
+                            </div>
+                            <div class="room-card ">
+                                <div class="room-name"><a href="https://klips2.uni-koeln.de/co/wbKalender.wbRessource?pResNr=109&pDisplayMode=w&pDatum=" target="_blank">S172</a></div>
+                                <div class="empty">—</div>
+                            </div>
+                            <div class="room-card ">
+                                <div class="room-name"><a href="https://klips2.uni-koeln.de/co/wbKalender.wbRessource?pResNr=110&pDisplayMode=w&pDatum=" target="_blank">S173</a></div>
+                                <div class="empty">—</div>
+                            </div>
+                            <div class="room-card ">
+                                <div class="room-name"><a href="https://klips2.uni-koeln.de/co/wbKalender.wbRessource?pResNr=111&pDisplayMode=w&pDatum=" target="_blank">S174</a></div>
+                                <div class="empty">—</div>
+                            </div>
+                            <div class="room-card ">
+                                <div class="room-name"><a href="https://klips2.uni-koeln.de/co/wbKalender.wbRessource?pResNr=112&pDisplayMode=w&pDatum=" target="_blank">S175</a></div>
+                                <div class="empty">—</div>
+                            </div>
+                            <div class="room-card ">
+                                <div class="room-name decentral"><a href="https://klips2.uni-koeln.de/co/wbKalender.wbRessource?pResNr=274&pDisplayMode=w&pDatum=" target="_blank">Rep</a></div>
+                                <div class="empty">—</div>
+                            </div>
+                            <div class="room-card ">
+                                <div class="room-name decentral"><a href="https://klips2.uni-koeln.de/co/wbKalender.wbRessource?pResNr=444&pDisplayMode=w&pDatum=" target="_blank">113</a></div>
+                                <div class="empty">—</div>
+                            </div>
+                            <div class="room-card ">
+                                <div class="room-name decentral"><a href="https://klips2.uni-koeln.de/co/wbKalender.wbRessource?pResNr=277&pDisplayMode=w&pDatum=" target="_blank">S9</a></div>
+                                <div class="empty">—</div>
+                            </div>
+                        </div>
+                        <div class="decentral-note">* = dezentral</div>
+                    </div>
+                </div>
+
+                <div class="building-group">
+                    <div class="building-header collapsed" onclick="toggleCollapse(this)">
+                        <span>79a (225)</span>
+                        <span class="collapse-icon">▼</span>
+                    </div>
+                    <div class="building-content collapsed">
+                        <div class="rooms-grid">
+                            <div class="room-card ">
+                                <div class="room-name"><a href="https://klips2.uni-koeln.de/co/wbKalender.wbRessource?pResNr=959&pDisplayMode=w&pDatum=" target="_blank">S176</a></div>
+                                <div class="empty">—</div>
+                            </div>
+                            <div class="room-card ">
+                                <div class="room-name"><a href="https://klips2.uni-koeln.de/co/wbKalender.wbRessource?pResNr=958&pDisplayMode=w&pDatum=" target="_blank">S177</a></div>
+                                <div class="empty">—</div>
+                            </div>
+                            <div class="room-card ">
+                                <div class="room-name"><a href="https://klips2.uni-koeln.de/co/wbKalender.wbRessource?pResNr=957&pDisplayMode=w&pDatum=" target="_blank">S178</a></div>
+                                <div class="empty">—</div>
+                            </div>
+                            <div class="room-card has-bookings">
+                                <div class="room-name"><a href="https://klips2.uni-koeln.de/co/wbKalender.wbRessource?pResNr=961&pDisplayMode=w&pDatum=" target="_blank">S179</a></div>
+                                <ul class="time-list">
+                                    <li>10:00-16:00</li>
+                                    <li>10:00-16:00</li>
+                                </ul>
+                            </div>
+                            <div class="room-card ">
+                                <div class="room-name"><a href="https://klips2.uni-koeln.de/co/wbKalender.wbRessource?pResNr=960&pDisplayMode=w&pDatum=" target="_blank">S179a</a></div>
+                                <div class="empty">—</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="building-group">
+                    <div class="building-header collapsed" onclick="toggleCollapse(this)">
+                        <span>79d (222)</span>
+                        <span class="collapse-icon">▼</span>
+                    </div>
+                    <div class="building-content collapsed">
+                        <div class="rooms-grid">
+                            <div class="room-card ">
+                                <div class="room-name decentral"><a href="https://klips2.uni-koeln.de/co/wbKalender.wbRessource?pResNr=1178&pDisplayMode=w&pDatum=" target="_blank">S7</a></div>
+                                <div class="empty">—</div>
+                            </div>
+                            <div class="room-card ">
+                                <div class="room-name decentral"><a href="https://klips2.uni-koeln.de/co/wbKalender.wbRessource?pResNr=185&pDisplayMode=w&pDatum=" target="_blank">S8</a></div>
+                                <div class="empty">—</div>
+                            </div>
+                        </div>
+                        <div class="decentral-note">* = dezentral</div>
+                    </div>
+                </div>
+
+                <div class="building-group">
+                    <div class="building-header collapsed" onclick="toggleCollapse(this)">
+                        <span>79e (223)</span>
+                        <span class="collapse-icon">▼</span>
+                    </div>
+                    <div class="building-content collapsed">
+                        <div class="rooms-grid">
+                            <div class="room-card ">
+                                <div class="room-name decentral"><a href="https://klips2.uni-koeln.de/co/wbKalender.wbRessource?pResNr=465&pDisplayMode=w&pDatum=" target="_blank">1.05</a></div>
+                                <div class="empty">—</div>
+                            </div>
+                        </div>
+                        <div class="decentral-note">* = dezentral</div>
+                    </div>
+                </div>
+
+                <div class="building-group">
+                    <div class="building-header collapsed" onclick="toggleCollapse(this)">
+                        <span>210</span>
+                        <span class="collapse-icon">▼</span>
+                    </div>
+                    <div class="building-content collapsed">
+                        <div class="rooms-grid">
+                            <div class="room-card ">
+                                <div class="room-name"><a href="https://klips2.uni-koeln.de/co/wbKalender.wbRessource?pResNr=82&pDisplayMode=w&pDatum=" target="_blank">0.A.01</a></div>
+                                <div class="empty">—</div>
+                            </div>
+                            <div class="room-card ">
+                                <div class="room-name"><a href="https://klips2.uni-koeln.de/co/wbKalender.wbRessource?pResNr=83&pDisplayMode=w&pDatum=" target="_blank">2.B.11</a></div>
+                                <div class="empty">—</div>
+                            </div>
+                            <div class="room-card ">
+                                <div class="room-name decentral"><a href="https://klips2.uni-koeln.de/co/wbKalender.wbRessource?pResNr=267&pDisplayMode=w&pDatum=" target="_blank">0.A.02</a></div>
+                                <div class="empty">—</div>
+                            </div>
+                            <div class="room-card ">
+                                <div class="room-name decentral"><a href="https://klips2.uni-koeln.de/co/wbKalender.wbRessource?pResNr=165&pDisplayMode=w&pDatum=" target="_blank">0.B.01</a></div>
+                                <div class="empty">—</div>
+                            </div>
+                            <div class="room-card ">
+                                <div class="room-name decentral"><a href="https://klips2.uni-koeln.de/co/wbKalender.wbRessource?pResNr=531&pDisplayMode=w&pDatum=" target="_blank">1.A.12</a></div>
+                                <div class="empty">—</div>
+                            </div>
+                            <div class="room-card ">
+                                <div class="room-name decentral"><a href="https://klips2.uni-koeln.de/co/wbKalender.wbRessource?pResNr=265&pDisplayMode=w&pDatum=" target="_blank">1.A.13</a></div>
+                                <div class="empty">—</div>
+                            </div>
+                            <div class="room-card ">
+                                <div class="room-name decentral"><a href="https://klips2.uni-koeln.de/co/wbKalender.wbRessource?pResNr=266&pDisplayMode=w&pDatum=" target="_blank">1.A.14</a></div>
+                                <div class="empty">—</div>
+                            </div>
+                        </div>
+                        <div class="decentral-note">* = dezentral</div>
+                    </div>
+                </div>
+
+                <div class="building-group">
+                    <div class="building-header collapsed" onclick="toggleCollapse(this)">
+                        <span>825</span>
+                        <span class="collapse-icon">▼</span>
+                    </div>
+                    <div class="building-content collapsed">
+                        <div class="rooms-grid">
+                            <div class="room-card ">
+                                <div class="room-name"><a href="https://klips2.uni-koeln.de/co/wbKalender.wbRessource?pResNr=120&pDisplayMode=w&pDatum=" target="_blank">S192</a></div>
+                                <div class="empty">—</div>
+                            </div>
+                            <div class="room-card ">
+                                <div class="room-name"><a href="https://klips2.uni-koeln.de/co/wbKalender.wbRessource?pResNr=121&pDisplayMode=w&pDatum=" target="_blank">S193</a></div>
+                                <div class="empty">—</div>
+                            </div>
+                            <div class="room-card ">
+                                <div class="room-name"><a href="https://klips2.uni-koeln.de/co/wbKalender.wbRessource?pResNr=122&pDisplayMode=w&pDatum=" target="_blank">S194</a></div>
+                                <div class="empty">—</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="footer">
             <div class="footer-logo">
-                <img src="Universitaet_zu_Koeln_Logo.jpg" alt="Universität zu Köln">
+                <img src="Universitaet_zu_Koeln_Logo.png" alt="Universität zu Köln">
             </div>
             <div class="footer-text">
                 Copyright © UzK 2026, Abt. 54.1<br>
                 Erstellt mit Unterstützung von Claude.ai<br>
-                Generiert am 14.02.2026 um 04:01 Uhr
+                Generiert am 14.02.2026 um 21:14 Uhr
             </div>
         </div>
     </div>
